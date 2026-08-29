@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Moments of Skill, Dignity &amp; Community | [NGO Name]</title>
+  <meta name="description" content="Explore our photo and video gallery showcasing vocational training sessions, machine sewing workshops, cloth cutting, finished garments, and community milestones." />
+  <meta name="keywords" content="NGO gallery, vocational training photos, sewing workshop pictures, community empowerment events, garment making photos" />
+  <meta name="author" content="[NGO Name]" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gallery — Moments of Skill, Dignity &amp; Community | [NGO Name]" />
+  <meta property="og:description" content="Witness the transformation: snapshots of training classes, machine sewing, finished apparel, and community empowerment." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" />
+  <meta property="og:url" content="gallery.html" />
+
+  <link rel="canonical" href="gallery.html" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Inter:wght@300;400;500;600;700&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="[NGO Name] Homepage">
+        <div class="navbar__logo-icon" aria-hidden="true">🧵</div>
+        <div class="navbar__logo-text">
+          <span class="navbar__logo-name">[NGO Name]</span>
+          <span class="navbar__logo-tagline">Training &amp; Livelihoods</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="training.html" class="nav-link">Training</a>
+        <a href="production.html" class="nav-link">Production</a>
+        <a href="impact.html" class="nav-link">Impact</a>
+        <a href="stories.html" class="nav-link">Stories</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="get-involved.html" class="nav-link">Get Involved</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="donate.html" class="btn btn-primary btn-sm">Support Our Mission</a>
+        <button class="btn btn-whatsapp btn-sm" data-whatsapp="Hi, I would like to know more about your NGO and gallery.">
+          <span>WhatsApp</span>
+        </button>
+      </div>
+
+      <button class="navbar__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <nav class="mobile-menu__nav">
+        <a href="index.html" class="mobile-menu__link">Home</a>
+        <a href="about.html" class="mobile-menu__link">About Us</a>
+        <a href="programs.html" class="mobile-menu__link">Training Programs</a>
+        <a href="training.html" class="mobile-menu__link">Vocational Training</a>
+        <a href="production.html" class="mobile-menu__link">Garment Production</a>
+        <a href="impact.html" class="mobile-menu__link">Our Impact</a>
+        <a href="stories.html" class="mobile-menu__link">Success Stories</a>
+        <a href="gallery.html" class="mobile-menu__link active">Photo Gallery</a>
+        <a href="get-involved.html" class="mobile-menu__link">Get Involved</a>
+        <a href="contact.html" class="mobile-menu__link">Contact Us</a>
+        <a href="donate.html" class="mobile-menu__link" style="color:var(--secondary); font-weight:700;">Donate Now &rarr;</a>
+      </nav>
+      <div class="mobile-menu__footer">
+        <a href="donate.html" class="btn btn-primary" style="width:100%; margin-bottom:12px;">Support Our Mission</a>
+        <button class="btn btn-whatsapp" style="width:100%;" data-whatsapp="Hi, I would like to know more about your gallery.">
+          Chat on WhatsApp
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <div class="page-hero__eyebrow">
+        <span></span> Visual Journey <span></span>
+      </div>
+      <h1 class="page-hero__title">Our Work in <em>Pictures &amp; Action</em></h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb__sep">/</span>
+        <span class="breadcrumb__current">Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY FILTER & GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Life at the Center</span>
+        <h2 class="section-title">Moments of <span>Skill &amp; Empowerment</span></h2>
+        <p class="section-subtitle">
+          Filter by category to view our sewing classes, machine operation, garment production line, community events, and graduation ceremonies.
+        </p>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- Filter Buttons Bar -->
+      <div class="gallery-filter-bar" style="display:flex; justify-content:center; flex-wrap:wrap; gap:10px; margin-bottom:48px;">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="training">Training Classes</button>
+        <button class="filter-btn" data-filter="sewing">Sewing &amp; Stitching</button>
+        <button class="filter-btn" data-filter="production">Garment Production</button>
+        <button class="filter-btn" data-filter="events">Events &amp; Graduation</button>
+        <button class="filter-btn" data-filter="community">Community Outreach</button>
+      </div>
+
+      <!-- 16-Item Gallery Grid -->
+      <div class="gallery__grid">
+        <!-- Item 1 -->
+        <div class="gallery__item gallery__item--wide gallery-item reveal" data-category="training" data-src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" data-caption="Vocational sewing classroom in full session with trainees">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Sewing classroom training" class="gallery__img" loading="lazy" />
+          <div class="gallery__overlay">
+            <p class="gallery__caption">Vocational Sewing Classroom &bull; Training</p>
+          </div>
+          <div class="gallery__zoom">🔍</div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery__item gallery-item reveal" data-category="sewing" data-src="https://images.unsplash.com/photo-1597843786186-8e2e0b5b2fbc?w=1200&q=80" data-caption="Trainee practicing precision garment stitching">
+          <img src="https://images.unsplash.com/photo-1597843786186-8e2e0b5b2fbc?w=600&q=80" alt="Precision garment stitching" class="gallery__img" loading="lazy" />
+          <div class="gallery__overlay">
+            <p class="gallery__caption">Precision Stitching &bull; Sewing</p>
+          </div>
+          <div class="gallery__zoom">🔍</div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery__item gallery-item reveal" data-category="sewing" data-src="https://images.unsplash.com/photo-1559181567-c3190ca9d5db?w=1200&q=80" data-caption="Individual machine practice on electric lockstitch machine">
+          <img src="https://images.unsplash.com/photo-1559181567-c3190ca9d5db?w=600&q=80" alt="Electric lockstitch machine practice" class="gallery__img" loading="lazy" />
+          <div class="gallery__overlay">
+            <p class="gallery__caption">Motorized Sewing Practice &bull; Sewing</p>
+          </div>
+          <div class="gallery__zoom">🔍</div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery__item gallery-item reveal" data-category="production" data-src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80" data-caption="Fabric roll inventory for uniform production batch">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Fabric rolls for garment production" class="gallery__img" loading="lazy" />
+          <div class="gallery__overlay">
+            <p class="gallery__caption">Fabric Sourcing &bull; Production</p>
+          </div>
+          <div class="gallery__zoom">🔍</div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery__item gallery__item--wide gallery-item reveal" data-category="community" data-src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1200&q=80" data-caption="Empowered community artisan smiling at work">
+          <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&q=80" alt="Community artisan at work" class="gallery__img" loading="lazy" />
+          <div class="gallery__overlay">
+            <p class="gallery__caption">Artisan Dignity &bull; Community</p>
+          </div>
+          <div class="gallery__zoom">🔍</div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery__item gallery-item reveal" data-category="production" data-src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=1200&q=80" data-caption="Quality inspection of finished dresses">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=600&q=80" alt="Finished garment quality inspection" class="gallery__img" loading="lazy" />
+          <div class="gallery__overlay">
+            <p class="gallery__caption">Quality Control &bull; Production</p>
+          </div>
+          <div class="gallery__zoom">🔍</div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="gallery__item gallery__item--wide gallery-item reveal" data-category="events" data-src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80" data-caption="Annual training batch graduation ceremony">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80" alt="Graduation ceremony celebration" class="gallery__img" loading="lazy" />
+          <div class="gallery__overlay">
+            <p class="gallery__caption">Graduation Ceremony &bull; Events</p>
+          </div>
+          <div class="gallery__zoom">🔍</div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="gallery__item gallery-item reveal" data-category="production" data-src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=1200&q=80" data-caption="Children receiving newly stitched school uniforms">
+          <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&q=80" alt="School uniform distribution" class="gallery__img" loading="lazy" />
+          <div class="gallery__overlay">
+            <p class="gallery__caption">Uniform Distribution &bull; Production</p>
+          </div>
+          <div class="gallery__zoom">🔍</div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="gallery__item gallery-item reveal" data-category="training" data-src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1200&q=80" data-caption="Embroidery and decorative stitching training">
+          <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&q=80" alt="Embroidery training class" class="gallery__img" loading="lazy" />
+          <div class="gallery__overlay">
+            <p class="gallery__caption">Embroidery Workshop &bull; Training</p>
+          </div>
+          <div class="gallery__zoom">🔍</div>
+        </div>
+
+        <!-- Item 10 -->
+        <div class="gallery__item gallery-item reveal" data-category="community" data-src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=1200&q=80" data-caption="Community self-help group meeting">
+          <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=600&q=80" alt="Self-help group meeting" class="gallery__img" loading="lazy" />
+          <div class="gallery__overlay">
+            <p class="gallery__caption">Self-Help Group &bull; Community</p>
+          </div>
+          <div class="gallery__zoom">🔍</div>
+        </div>
+
+        <!-- Item 11 -->
+        <div class="gallery__item gallery-item reveal" data-category="events" data-src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1200&q=80" data-caption="Skill exhibition and craft fair">
+          <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&q=80" alt="Skill exhibition event" class="gallery__img" loading="lazy" />
+          <div class="gallery__overlay">
+            <p class="gallery__caption">Artisan Craft Fair &bull; Events</p>
+          </div>
+          <div class="gallery__zoom">🔍</div>
+        </div>
+
+        <!-- Item 12 -->
+        <div class="gallery__item gallery__item--wide gallery-item reveal" data-category="community" data-src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&q=80" data-caption="Community outreach in rural villages">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80" alt="Community outreach meeting" class="gallery__img" loading="lazy" />
+          <div class="gallery__overlay">
+            <p class="gallery__caption">Village Skill Camp &bull; Community</p>
+          </div>
+          <div class="gallery__zoom">🔍</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SHOWCASE SECTION -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Watch &amp; Experience</span>
+        <h2 class="section-title">See Our Work <span>In Action</span></h2>
+        <p class="section-subtitle">
+          Watch how daily vocational training transforms beginner learners into confident creators on the production floor.
+        </p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="grid grid-2" style="gap:32px;">
+        <!-- Video Card 1 -->
+        <div class="card reveal" style="padding:0; overflow:hidden;">
+          <div style="position:relative; aspect-ratio:16/9; background:#17211c; display:flex; align-items:center; justify-content:center;">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Inside the sewing center video thumbnail" style="width:100%; height:100%; object-fit:cover; opacity:0.65;" />
+            <div style="position:absolute; width:64px; height:64px; background:var(--secondary); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--white); font-size:24px; box-shadow:var(--shadow-lg);">
+              ▶
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">A Day Inside Our Sewing Center</h3>
+            <p class="card__text">
+              Walk through our morning training batches, motorized machine setup, and hear directly from our instructors and trainees.
+            </p>
+            <p style="font-size:0.8rem; color:var(--text-muted);">
+              <em>* Video placeholder &mdash; click will connect with video player or YouTube embed once uploaded.</em>
+            </p>
+          </div>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="card reveal" style="padding:0; overflow:hidden;">
+          <div style="position:relative; aspect-ratio:16/9; background:#17211c; display:flex; align-items:center; justify-content:center;">
+            <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&q=80" alt="Artisan journey video thumbnail" style="width:100%; height:100%; object-fit:cover; opacity:0.65;" />
+            <div style="position:absolute; width:64px; height:64px; background:var(--secondary); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--white); font-size:24px; box-shadow:var(--shadow-lg);">
+              ▶
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">From Trainee to Business Owner</h3>
+            <p class="card__text">
+              A documentary spotlight on how acquiring sewing skills gave a woman the confidence and income to educate her daughters.
+            </p>
+            <p style="font-size:0.8rem; color:var(--text-muted);">
+              <em>* Video placeholder &mdash; click will connect with video player or YouTube embed once uploaded.</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMIT PHOTOS / SHARE MOMENTS CTA -->
+  <section class="section section--primary">
+    <div class="container text-center">
+      <span class="section-badge section-badge--light">Community Contributions</span>
+      <h2 class="section-title section-title--white">Are You a Program <span>Graduate or Volunteer?</span></h2>
+      <p class="section-subtitle section-subtitle--white" style="margin-bottom:32px;">
+        Share your training moments, finished outfits, or workshop photos with us to be featured in our community gallery.
+      </p>
+      <button class="btn btn-secondary btn-lg" data-whatsapp="Hi, I would like to share training/garment photos from our center to be added to the gallery.">
+        Share Photos on WhatsApp &rarr;
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container footer__grid">
+        <div>
+          <a href="index.html" class="footer__logo">
+            <div class="navbar__logo-icon" style="background:var(--primary-light);">🧵</div>
+            <span class="footer__logo-name">[NGO Name]</span>
+          </a>
+          <p class="footer__tagline">
+            Empowering communities through vocational training, machine sewing skills, garment making, and sustainable livelihood opportunities.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">ig</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">yt</a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="programs.html" class="footer__link">Training Programs</a></li>
+            <li><a href="training.html" class="footer__link">Vocational Training</a></li>
+            <li><a href="production.html" class="footer__link">Garment Production</a></li>
+            <li><a href="impact.html" class="footer__link">Our Impact</a></li>
+            <li><a href="stories.html" class="footer__link">Success Stories</a></li>
+            <li><a href="gallery.html" class="footer__link">Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Get Involved</h4>
+          <ul class="footer__links">
+            <li><a href="donate.html" class="footer__link">Donate &amp; Sponsor</a></li>
+            <li><a href="get-involved.html#volunteer" class="footer__link">Become a Volunteer</a></li>
+            <li><a href="get-involved.html#csr" class="footer__link">CSR Partnerships</a></li>
+            <li><a href="production.html#orders" class="footer__link">Place Garment Orders</a></li>
+            <li><a href="contact.html" class="footer__link">Visit Our Center</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Contact &amp; Hours</h4>
+          <div style="font-size:0.9rem; line-height:1.8; color:rgba(255,255,255,0.7);">
+            <p>📍 <strong>Address:</strong> [NGO Address, City, State &ndash; PIN]</p>
+            <p>📞 <strong>Phone:</strong> +91 XXXXX XXXXX</p>
+            <p>✉️ <strong>Email:</strong> info@example.org</p>
+            <p>⏰ <strong>Hours:</strong> Mon &ndash; Sat: 10:00 AM &ndash; 6:00 PM</p>
+          </div>
+          <div style="margin-top:16px;">
+            <button class="btn btn-whatsapp btn-sm" data-whatsapp="Hi, I would like to reach out to your NGO team.">
+              Chat on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-block:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-size:0.85rem; color:rgba(255,255,255,0.5);">
+      <p>&copy; 2026 [NGO Name]. All Rights Reserved. Reg. Non-Profit Organisation.</p>
+      <div style="display:flex; gap:16px;">
+        <a href="#" style="color:inherit;">Privacy Policy</a>
+        <a href="#" style="color:inherit;">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

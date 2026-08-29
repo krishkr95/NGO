@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training Programs | [NGO Name]</title>
+  <meta name="description" content="Explore [NGO Name]'s vocational training programs — sewing, tailoring, machine operation, garment making, embroidery, and entrepreneurship for community members." />
+  <meta name="keywords" content="vocational training programs, sewing course, garment making, machine operation, embroidery, entrepreneurship, NGO programs" />
+  <meta name="author" content="[NGO Name]" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Training Programs | [NGO Name]" />
+  <meta property="og:description" content="Six hands-on vocational training programs designed to build practical skills and create livelihood opportunities." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1597812353702-5dd22b1b02a3?w=1200&q=80" />
+  <meta property="og:url" content="programs.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Training Programs | [NGO Name]" />
+  <meta name="twitter:description" content="Learn. Practice. Create. Grow. Six vocational programs for community empowerment." />
+  <link rel="canonical" href="programs.html" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <style>
+    :root{--primary:#1f6f54;--primary-dark:#174f3c;--primary-light:#2a8f6e;--secondary:#e89b3c;--secondary-dark:#c97d20;--light:#f7f5ef;--dark:#17211c;--dark-mid:#2c3d33;--gray:#6b7c74;--gray-light:#e8e4da;--white:#ffffff;--shadow-sm:0 2px 8px rgba(31,111,84,.10);--shadow-md:0 8px 32px rgba(31,111,84,.14);--shadow-lg:0 16px 60px rgba(31,111,84,.18);--radius-sm:8px;--radius-md:16px;--radius-lg:24px;--transition:.35s cubic-bezier(.4,0,.2,1);--font-head:'Georgia','Times New Roman',serif;--font-body:'Segoe UI',system-ui,-apple-system,sans-serif}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:var(--font-body);background:var(--white);color:var(--dark);line-height:1.7;overflow-x:hidden}
+    img{max-width:100%;height:auto;display:block}
+    a{text-decoration:none;color:inherit}
+    ul{list-style:none}
+    button{cursor:pointer;border:none;background:none;font-family:inherit}
+    .container{max-width:1180px;margin:0 auto;padding:0 24px}
+    .section{padding:96px 0}
+    .section--alt{background:var(--light)}
+    .badge{display:inline-block;background:rgba(232,155,60,.15);color:var(--secondary-dark);border:1px solid rgba(232,155,60,.3);font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 18px;border-radius:100px;margin-bottom:20px}
+    .badge--light{background:rgba(255,255,255,.15);color:var(--white);border-color:rgba(255,255,255,.3)}
+    .section-label{font-size:.8rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--secondary);margin-bottom:12px;display:block}
+    .section-heading{font-family:var(--font-head);font-size:clamp(2rem,4vw,2.8rem);font-weight:700;line-height:1.2;color:var(--dark);margin-bottom:20px}
+    .section-subtext{font-size:1.05rem;color:var(--gray);max-width:600px;line-height:1.8}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;border-radius:100px;font-weight:700;font-size:.95rem;transition:var(--transition);letter-spacing:.02em}
+    .btn--primary{background:var(--primary);color:var(--white);box-shadow:0 4px 20px rgba(31,111,84,.3)}
+    .btn--primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 8px 30px rgba(31,111,84,.4)}
+    .btn--secondary{background:var(--secondary);color:var(--white);box-shadow:0 4px 20px rgba(232,155,60,.3)}
+    .btn--secondary:hover{background:var(--secondary-dark);transform:translateY(-2px);box-shadow:0 8px 30px rgba(232,155,60,.4)}
+    .btn--whatsapp{background:#25d366;color:var(--white);box-shadow:0 4px 20px rgba(37,211,102,.3)}
+    .btn--whatsapp:hover{background:#1ebe5d;transform:translateY(-2px);box-shadow:0 8px 30px rgba(37,211,102,.4)}
+    .btn--outline{border:2px solid var(--white);color:var(--white);background:transparent}
+    .btn--outline:hover{background:var(--white);color:var(--primary);transform:translateY(-2px)}
+    .btn--sm{padding:10px 22px;font-size:.875rem}
+    /* NAVBAR */
+    .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(23,33,28,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.07);transition:var(--transition)}
+    .navbar.scrolled{box-shadow:0 4px 30px rgba(0,0,0,.3)}
+    .navbar__inner{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1280px;margin:0 auto;padding:0 32px}
+    .navbar__logo{display:flex;align-items:center;gap:12px}
+    .navbar__logo-icon{width:42px;height:42px;background:linear-gradient(135deg,var(--primary),var(--primary-light));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:var(--white);flex-shrink:0}
+    .navbar__logo-text{display:flex;flex-direction:column}
+    .navbar__logo-name{font-family:var(--font-head);font-size:1.15rem;font-weight:700;color:var(--white);line-height:1.1}
+    .navbar__logo-tagline{font-size:.65rem;color:rgba(255,255,255,.55);letter-spacing:.12em;text-transform:uppercase}
+    .navbar__nav{display:flex;align-items:center;gap:4px}
+    .navbar__link{color:rgba(255,255,255,.8);font-size:.875rem;font-weight:500;padding:8px 14px;border-radius:8px;transition:var(--transition);white-space:nowrap}
+    .navbar__link:hover,.navbar__link.active{color:var(--white);background:rgba(255,255,255,.1)}
+    .navbar__link.active{color:var(--secondary)}
+    .navbar__cta{background:var(--primary);color:var(--white)!important;padding:9px 20px!important;border-radius:100px!important;font-weight:700!important}
+    .navbar__cta:hover{background:var(--primary-light)!important}
+    .navbar__toggle{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer}
+    .navbar__toggle span{width:24px;height:2px;background:var(--white);border-radius:2px;transition:var(--transition);display:block}
+    .navbar__toggle.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+    .navbar__toggle.open span:nth-child(2){opacity:0}
+    .navbar__toggle.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+    /* PAGE HERO */
+    .page-hero{background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary) 50%,var(--primary-light) 100%);padding:160px 0 80px;position:relative;overflow:hidden}
+    .page-hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1597812353702-5dd22b1b02a3?w=1400&q=80') center/cover no-repeat;opacity:.12}
+    .page-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80px;background:var(--white);clip-path:ellipse(55% 100% at 50% 100%)}
+    .page-hero__inner{position:relative;z-index:2;text-align:center}
+    .page-hero__eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:20px}
+    .page-hero__eyebrow span{width:30px;height:1px;background:rgba(255,255,255,.5);display:block}
+    .page-hero__title{font-family:var(--font-head);font-size:clamp(2.5rem,6vw,4rem);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:24px}
+    .page-hero__title em{font-style:italic;color:var(--secondary)}
+    .breadcrumb{display:flex;align-items:center;justify-content:center;gap:10px;font-size:.875rem;color:rgba(255,255,255,.7)}
+    .breadcrumb a{color:rgba(255,255,255,.7);transition:var(--transition)}
+    .breadcrumb a:hover{color:var(--secondary)}
+    .breadcrumb__sep{color:rgba(255,255,255,.4)}
+    .breadcrumb__current{color:var(--secondary);font-weight:600}
+    /* PROGRAMS INTRO */
+    .programs-intro{text-align:center;max-width:720px;margin:0 auto}
+    .programs-intro .section-heading{font-size:clamp(2.2rem,4vw,3rem)}
+    /* PROGRAMS GRID */
+    .programs__grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:60px}
+    .program-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--gray-light);transition:var(--transition)}
+    .program-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:transparent}
+    .program-card__img{width:100%;height:240px;object-fit:cover;background:var(--gray-light)}
+    .program-card__body{padding:32px}
+    .program-card__header{display:flex;align-items:flex-start;gap:16px;margin-bottom:16px}
+    .program-card__icon{width:52px;height:52px;border-radius:12px;background:rgba(31,111,84,.1);display:flex;align-items:center;justify-content:center;font-size:1.6rem;flex-shrink:0}
+    .program-card__title-group{}
+    .program-card__title-group h3{font-family:var(--font-head);font-size:1.3rem;font-weight:700;color:var(--dark);margin-bottom:6px}
+    .program-card__badges{display:flex;gap:8px;flex-wrap:wrap}
+    .prog-badge{font-size:.72rem;font-weight:700;padding:4px 12px;border-radius:100px;letter-spacing:.06em}
+    .prog-badge--duration{background:rgba(31,111,84,.1);color:var(--primary)}
+    .prog-badge--level{background:rgba(232,155,60,.12);color:var(--secondary-dark)}
+    .program-card__desc{color:var(--gray);font-size:.925rem;line-height:1.75;margin-bottom:20px}
+    .program-card__curriculum{background:var(--light);border-radius:var(--radius-sm);padding:18px 20px;margin-bottom:22px}
+    .program-card__curriculum h4{font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--primary);margin-bottom:12px}
+    .program-card__curriculum ul{display:flex;flex-direction:column;gap:8px}
+    .program-card__curriculum li{display:flex;align-items:center;gap:10px;font-size:.875rem;color:var(--dark-mid)}
+    .program-card__curriculum li::before{content:'✓';color:var(--primary);font-weight:800;font-size:.85rem}
+    /* SCHEDULE */
+    .schedule__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px}
+    .schedule-box{background:var(--white);border-radius:var(--radius-md);padding:28px 24px;text-align:center;box-shadow:var(--shadow-sm);border:1px solid var(--gray-light);transition:var(--transition)}
+    .schedule-box:hover{box-shadow:var(--shadow-md);border-color:var(--primary);transform:translateY(-4px)}
+    .schedule-box__icon{font-size:2rem;margin-bottom:14px}
+    .schedule-box h4{font-family:var(--font-head);font-size:1rem;font-weight:700;color:var(--dark);margin-bottom:8px}
+    .schedule-box p{font-size:.875rem;color:var(--gray);line-height:1.6}
+    /* ELIGIBILITY */
+    .eligibility__grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:48px}
+    .eligibility__list{display:flex;flex-direction:column;gap:14px}
+    .eligibility__item{display:flex;align-items:flex-start;gap:14px;padding:16px 20px;background:var(--white);border-radius:var(--radius-sm);box-shadow:var(--shadow-sm)}
+    .eligibility__item-icon{width:36px;height:36px;background:rgba(31,111,84,.1);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+    .eligibility__item p{font-size:.9rem;color:var(--dark-mid);line-height:1.6}
+    .eligibility__note{background:linear-gradient(135deg,var(--primary-dark),var(--primary));border-radius:var(--radius-lg);padding:40px;color:var(--white)}
+    .eligibility__note h3{font-family:var(--font-head);font-size:1.5rem;margin-bottom:14px}
+    .eligibility__note p{font-size:.925rem;line-height:1.8;opacity:.9;margin-bottom:20px}
+    /* FAQ */
+    .faq__list{max-width:800px;margin:48px auto 0;display:flex;flex-direction:column;gap:16px}
+    .faq__item{background:var(--white);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);border:1px solid var(--gray-light);overflow:hidden}
+    .faq__question{display:flex;align-items:center;justify-content:space-between;padding:22px 28px;cursor:pointer;gap:16px;transition:var(--transition)}
+    .faq__question:hover{background:rgba(31,111,84,.04)}
+    .faq__question h4{font-size:1rem;font-weight:600;color:var(--dark);line-height:1.4}
+    .faq__icon{width:32px;height:32px;border-radius:50%;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;transition:var(--transition);color:var(--primary);font-weight:700}
+    .faq__item.open .faq__icon{background:var(--primary);color:var(--white);transform:rotate(45deg)}
+    .faq__answer{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease}
+    .faq__item.open .faq__answer{max-height:300px}
+    .faq__answer p{padding:0 28px 22px;font-size:.925rem;color:var(--gray);line-height:1.8}
+    /* CTA */
+    .cta-section{background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary) 100%);padding:96px 0;text-align:center;position:relative;overflow:hidden}
+    .cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(232,155,60,.15),transparent 60%)}
+    .cta-section__inner{position:relative;z-index:1}
+    .cta-section h2{font-family:var(--font-head);font-size:clamp(2rem,4vw,2.8rem);color:var(--white);margin-bottom:16px;font-weight:700}
+    .cta-section p{color:rgba(255,255,255,.8);font-size:1.05rem;max-width:560px;margin:0 auto 40px;line-height:1.8}
+    .cta-section__btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    /* FOOTER */
+    .footer{background:var(--dark);color:rgba(255,255,255,.75);padding:80px 0 0}
+    .footer__grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:64px;border-bottom:1px solid rgba(255,255,255,.1)}
+    .footer__logo{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+    .footer__logo-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--primary),var(--primary-light));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:var(--white);flex-shrink:0}
+    .footer__logo-name{font-family:var(--font-head);font-size:1.2rem;font-weight:700;color:var(--white)}
+    .footer__logo-tagline{font-size:.65rem;color:rgba(255,255,255,.45);letter-spacing:.1em;text-transform:uppercase;display:block}
+    .footer__brand-desc{font-size:.9rem;line-height:1.8;margin-bottom:24px}
+    .footer__socials{display:flex;gap:12px}
+    .footer__social{width:40px;height:40px;background:rgba(255,255,255,.07);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;transition:var(--transition);color:rgba(255,255,255,.7)}
+    .footer__social:hover{background:var(--primary);color:var(--white);transform:translateY(-3px)}
+    .footer__col-heading{font-size:.75rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--white);margin-bottom:24px}
+    .footer__links{display:flex;flex-direction:column;gap:12px}
+    .footer__link{font-size:.9rem;color:rgba(255,255,255,.65);transition:var(--transition);display:flex;align-items:center;gap:8px}
+    .footer__link::before{content:'›';color:var(--secondary);font-size:1rem}
+    .footer__link:hover{color:var(--white);padding-left:4px}
+    .footer__contact-item{display:flex;align-items:flex-start;gap:12px;font-size:.875rem;margin-bottom:16px}
+    .footer__contact-icon{width:32px;height:32px;background:rgba(31,111,84,.25);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;color:var(--secondary)}
+    .footer__bottom{padding:24px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .footer__bottom p{font-size:.85rem}
+    .footer__bottom-links{display:flex;gap:24px}
+    .footer__bottom-link{font-size:.85rem;color:rgba(255,255,255,.5);transition:var(--transition)}
+    .footer__bottom-link:hover{color:var(--secondary)}
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(40px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.revealed{opacity:1;transform:none}
+    .reveal-left{opacity:0;transform:translateX(-50px);transition:opacity .7s ease,transform .7s ease}
+    .reveal-left.revealed{opacity:1;transform:none}
+    .reveal-right{opacity:0;transform:translateX(50px);transition:opacity .7s ease,transform .7s ease}
+    .reveal-right.revealed{opacity:1;transform:none}
+    .reveal-delay-1{transition-delay:.1s}
+    .reveal-delay-2{transition-delay:.2s}
+    .reveal-delay-3{transition-delay:.3s}
+    .reveal-delay-4{transition-delay:.4s}
+    /* RESPONSIVE */
+    @media(max-width:1024px){
+      .programs__grid{grid-template-columns:1fr}
+      .schedule__grid{grid-template-columns:1fr 1fr}
+      .eligibility__grid{grid-template-columns:1fr}
+      .footer__grid{grid-template-columns:1fr 1fr;gap:36px}
+    }
+    @media(max-width:768px){
+      .section{padding:72px 0}
+      .navbar__nav{display:none;flex-direction:column;position:fixed;top:72px;left:0;right:0;bottom:0;background:var(--dark);padding:32px 24px;gap:8px;overflow-y:auto;z-index:999}
+      .navbar__nav.open{display:flex}
+      .navbar__link{font-size:1rem;padding:14px 16px;width:100%}
+      .navbar__toggle{display:flex}
+      .schedule__grid{grid-template-columns:1fr}
+      .footer__grid{grid-template-columns:1fr;gap:36px}
+      .footer__bottom{flex-direction:column;text-align:center}
+    }
+    @media(max-width:480px){
+      .page-hero{padding:140px 0 72px}
+      .cta-section__btns{flex-direction:column;align-items:center}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="[NGO Name] Home">
+        <div class="navbar__logo-icon" aria-hidden="true">🌿</div>
+        <div class="navbar__logo-text">
+          <span class="navbar__logo-name">[NGO Name]</span>
+          <span class="navbar__logo-tagline">Empowering Communities</span>
+        </div>
+      </a>
+      <nav class="navbar__nav" id="navMenu" role="navigation" aria-label="Primary navigation">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="about.html" class="navbar__link">About</a>
+        <a href="programs.html" class="navbar__link active" aria-current="page">Programs</a>
+        <a href="training.html" class="navbar__link">Training</a>
+        <a href="production.html" class="navbar__link">Production</a>
+        <a href="gallery.html" class="navbar__link">Gallery</a>
+        <a href="impact.html" class="navbar__link">Our Impact</a>
+        <a href="blog.html" class="navbar__link">Blog</a>
+        <a href="donate.html" class="navbar__link">Donate</a>
+        <a href="contact.html" class="navbar__link navbar__cta">Contact Us</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Page header">
+      <div class="container">
+        <div class="page-hero__inner">
+          <div class="page-hero__eyebrow"><span></span>What We Offer<span></span></div>
+          <h1 class="page-hero__title">Our Training <em>Programs</em></h1>
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb__sep" aria-hidden="true">›</span>
+            <span class="breadcrumb__current" aria-current="page">Programs</span>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS INTRO -->
+    <section class="section" aria-labelledby="programs-intro-heading">
+      <div class="container">
+        <div class="programs-intro reveal">
+          <span class="badge">What We Offer</span>
+          <h2 class="section-heading" id="programs-intro-heading">Learn. Practice.<br/>Create. Grow.</h2>
+          <p class="section-subtext" style="margin:0 auto">
+            Our skills-based training programs are carefully designed to give participants practical, market-ready abilities. Each program combines structured instruction with hands-on practice — so that every graduate leaves with real competency, confidence, and career opportunity.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALL 6 PROGRAMS -->
+    <section class="section section--alt" id="all-programs" aria-labelledby="programs-grid-heading">
+      <div class="container">
+        <div style="text-align:center" class="reveal">
+          <span class="section-label">Our Curriculum</span>
+          <h2 class="section-heading" id="programs-grid-heading">All Training Programs</h2>
+          <p class="section-subtext" style="margin:0 auto">Six comprehensive programs covering every stage of garment creation — from needle and thread to enterprise and entrepreneurship.</p>
+        </div>
+
+        <div class="programs__grid">
+
+          <!-- 1. Sewing & Tailoring -->
+          <article class="program-card reveal reveal-delay-1" id="sewing">
+            <img
+              src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=700&q=80"
+              alt="Sewing and tailoring training session"
+              class="program-card__img"
+              width="700" height="240"
+              loading="lazy"
+            />
+            <div class="program-card__body">
+              <div class="program-card__header">
+                <div class="program-card__icon" aria-hidden="true">🧵</div>
+                <div class="program-card__title-group">
+                  <h3>Sewing &amp; Tailoring</h3>
+                  <div class="program-card__badges">
+                    <span class="prog-badge prog-badge--duration">⏱ [X] Weeks</span>
+                    <span class="prog-badge prog-badge--level">🌱 Beginner</span>
+                  </div>
+                </div>
+              </div>
+              <p class="program-card__desc">
+                The foundation of all garment skills. Participants learn the fundamentals of hand and machine sewing, progressing through basic stitching to full garment construction and alteration techniques. Ideal for complete beginners with no prior experience.
+              </p>
+              <div class="program-card__curriculum">
+                <h4>Curriculum Highlights</h4>
+                <ul>
+                  <li>Basic hand stitching techniques and stitch types</li>
+                  <li>Introduction to machine sewing and needle work</li>
+                  <li>Garment assembly — joining, seaming, hemming</li>
+                  <li>Alterations, repairs, and finishing</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn--whatsapp btn--sm" data-whatsapp="training" aria-label="Enquire about Sewing and Tailoring program via WhatsApp">
+                💬 Enquire About This Program
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. Machine Operation -->
+          <article class="program-card reveal reveal-delay-2" id="machine">
+            <img
+              src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=700&q=80"
+              alt="Sewing machine operation training"
+              class="program-card__img"
+              width="700" height="240"
+              loading="lazy"
+            />
+            <div class="program-card__body">
+              <div class="program-card__header">
+                <div class="program-card__icon" aria-hidden="true">⚙️</div>
+                <div class="program-card__title-group">
+                  <h3>Machine Operation</h3>
+                  <div class="program-card__badges">
+                    <span class="prog-badge prog-badge--duration">⏱ [X] Weeks</span>
+                    <span class="prog-badge prog-badge--level">🌱 Beginner–Intermediate</span>
+                  </div>
+                </div>
+              </div>
+              <p class="program-card__desc">
+                A focused program on mastering the sewing machine — from understanding its parts to high-speed precision operation. Participants learn threading, tension settings, speed control, and routine maintenance to ensure consistent quality output.
+              </p>
+              <div class="program-card__curriculum">
+                <h4>Curriculum Highlights</h4>
+                <ul>
+                  <li>Machine parts identification and functions</li>
+                  <li>Threading, bobbin winding, and tension setup</li>
+                  <li>Speed control and precision stitching practice</li>
+                  <li>Basic maintenance and troubleshooting</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn--whatsapp btn--sm" data-whatsapp="training" aria-label="Enquire about Machine Operation program via WhatsApp">
+                💬 Enquire About This Program
+              </a>
+            </div>
+          </article>
+
+          <!-- 3. Garment Making -->
+          <article class="program-card reveal reveal-delay-1" id="garment">
+            <img
+              src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=700&q=80"
+              alt="Garment making and construction training"
+              class="program-card__img"
+              width="700" height="240"
+              loading="lazy"
+            />
+            <div class="program-card__body">
+              <div class="program-card__header">
+                <div class="program-card__icon" aria-hidden="true">👗</div>
+                <div class="program-card__title-group">
+                  <h3>Garment Making</h3>
+                  <div class="program-card__badges">
+                    <span class="prog-badge prog-badge--duration">⏱ [X] Weeks</span>
+                    <span class="prog-badge prog-badge--level">📈 Intermediate</span>
+                  </div>
+                </div>
+              </div>
+              <p class="program-card__desc">
+                The complete garment-making journey from body measurements to finished product. This intermediate program teaches participants how to plan, cut, assemble, and complete a full garment with professional standards and quality finishing.
+              </p>
+              <div class="program-card__curriculum">
+                <h4>Curriculum Highlights</h4>
+                <ul>
+                  <li>Taking accurate body measurements</li>
+                  <li>Introduction to patterns and drafting basics</li>
+                  <li>Fabric cutting, layout, and preparation</li>
+                  <li>Full garment construction and finishing</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn--whatsapp btn--sm" data-whatsapp="training" aria-label="Enquire about Garment Making program via WhatsApp">
+                💬 Enquire About This Program
+              </a>
+            </div>
+          </article>
+
+          <!-- 4. Pattern & Cutting -->
+          <article class="program-card reveal reveal-delay-2" id="pattern">
+            <img
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80"
+              alt="Pattern making and precision cutting training"
+              class="program-card__img"
+              width="700" height="240"
+              loading="lazy"
+            />
+            <div class="program-card__body">
+              <div class="program-card__header">
+                <div class="program-card__icon" aria-hidden="true">📐</div>
+                <div class="program-card__title-group">
+                  <h3>Pattern &amp; Cutting</h3>
+                  <div class="program-card__badges">
+                    <span class="prog-badge prog-badge--duration">⏱ [X] Weeks</span>
+                    <span class="prog-badge prog-badge--level">📈 Intermediate</span>
+                  </div>
+                </div>
+              </div>
+              <p class="program-card__desc">
+                Precision is at the heart of professional garment making. This program trains participants to read and interpret commercial patterns, mark fabric accurately, and execute clean cuts for consistent, waste-minimal production.
+              </p>
+              <div class="program-card__curriculum">
+                <h4>Curriculum Highlights</h4>
+                <ul>
+                  <li>Reading and interpreting pattern instructions</li>
+                  <li>Fabric marking using chalk and tracing tools</li>
+                  <li>Precision cutting techniques and safety</li>
+                  <li>Efficient layout planning to minimise waste</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn--whatsapp btn--sm" data-whatsapp="training" aria-label="Enquire about Pattern and Cutting program via WhatsApp">
+                💬 Enquire About This Program
+              </a>
+            </div>
+          </article>
+
+          <!-- 5. Embroidery & Decorative -->
+          <article class="program-card reveal reveal-delay-1" id="embroidery">
+            <img
+              src="https://images.unsplash.com/photo-1616628188550-808682f3926d?w=700&q=80"
+              alt="Embroidery and decorative needlework training"
+              class="program-card__img"
+              width="700" height="240"
+              loading="lazy"
+            />
+            <div class="program-card__body">
+              <div class="program-card__header">
+                <div class="program-card__icon" aria-hidden="true">🌸</div>
+                <div class="program-card__title-group">
+                  <h3>Embroidery &amp; Decorative</h3>
+                  <div class="program-card__badges">
+                    <span class="prog-badge prog-badge--duration">⏱ [X] Weeks</span>
+                    <span class="prog-badge prog-badge--level">🎨 All Levels</span>
+                  </div>
+                </div>
+              </div>
+              <p class="program-card__desc">
+                Add value and artistry to garments with decorative embroidery skills. This program covers both hand embroidery traditions and modern machine embroidery, enabling participants to produce higher-value, distinctively finished products.
+              </p>
+              <div class="program-card__curriculum">
+                <h4>Curriculum Highlights</h4>
+                <ul>
+                  <li>Thread types, colours, and fabric compatibility</li>
+                  <li>Traditional embroidery patterns and techniques</li>
+                  <li>Machine embroidery settings and design</li>
+                  <li>Quality finishing and presentation</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn--whatsapp btn--sm" data-whatsapp="training" aria-label="Enquire about Embroidery program via WhatsApp">
+                💬 Enquire About This Program
+              </a>
+            </div>
+          </article>
+
+          <!-- 6. Entrepreneurship -->
+          <article class="program-card reveal reveal-delay-2" id="entrepreneurship">
+            <img
+              src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=700&q=80"
+              alt="Entrepreneurship and business skills training"
+              class="program-card__img"
+              width="700" height="240"
+              loading="lazy"
+            />
+            <div class="program-card__body">
+              <div class="program-card__header">
+                <div class="program-card__icon" aria-hidden="true">💡</div>
+                <div class="program-card__title-group">
+                  <h3>Entrepreneurship &amp; Livelihood</h3>
+                  <div class="program-card__badges">
+                    <span class="prog-badge prog-badge--duration">⏱ [X] Weeks</span>
+                    <span class="prog-badge prog-badge--level">🚀 Advanced</span>
+                  </div>
+                </div>
+              </div>
+              <p class="program-card__desc">
+                Transform skills into sustainable income. This program equips skilled participants with the knowledge to start and grow a small garment business — covering pricing, customer relations, basic accounting, and community marketing strategies.
+              </p>
+              <div class="program-card__curriculum">
+                <h4>Curriculum Highlights</h4>
+                <ul>
+                  <li>Product pricing and costing basics</li>
+                  <li>Customer handling and service skills</li>
+                  <li>Basic accounting and expense tracking</li>
+                  <li>Local marketing and community outreach</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn--whatsapp btn--sm" data-whatsapp="training" aria-label="Enquire about Entrepreneurship program via WhatsApp">
+                💬 Enquire About This Program
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINING SCHEDULE / FORMAT -->
+    <section class="section" aria-labelledby="schedule-heading">
+      <div class="container">
+        <div style="text-align:center" class="reveal">
+          <span class="section-label">How It Works</span>
+          <h2 class="section-heading" id="schedule-heading">Training Schedule &amp; Format</h2>
+          <p class="section-subtext" style="margin:0 auto">All programs are structured for accessibility — designed to fit around community life while delivering rigorous, practical skill development.</p>
+        </div>
+        <div class="schedule__grid">
+          <div class="schedule-box reveal reveal-delay-1">
+            <div class="schedule-box__icon" aria-hidden="true">📅</div>
+            <h4>Duration</h4>
+            <p>[X]–[X] weeks per program. Intensive and part-time formats available depending on participant needs.</p>
+          </div>
+          <div class="schedule-box reveal reveal-delay-2">
+            <div class="schedule-box__icon" aria-hidden="true">👥</div>
+            <h4>Batch Size</h4>
+            <p>Small group batches of [X]–[X] participants to ensure personalised attention and hands-on practice time.</p>
+          </div>
+          <div class="schedule-box reveal reveal-delay-3">
+            <div class="schedule-box__icon" aria-hidden="true">⏰</div>
+            <h4>Timings</h4>
+            <p>[Timings Placeholder — e.g., Morning: 9am–1pm / Evening: 4pm–7pm. Add actual batch timings here.]</p>
+          </div>
+          <div class="schedule-box reveal reveal-delay-4">
+            <div class="schedule-box__icon" aria-hidden="true">📍</div>
+            <h4>Location</h4>
+            <p>[Location Placeholder — e.g., Training Centre at [Address]. Add directions, map link, or area landmarks.]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ELIGIBILITY -->
+    <section class="section section--alt" aria-labelledby="eligibility-heading">
+      <div class="container">
+        <div style="text-align:center" class="reveal">
+          <span class="section-label">Who Can Join</span>
+          <h2 class="section-heading" id="eligibility-heading">Eligibility &amp; Requirements</h2>
+          <p class="section-subtext" style="margin:0 auto">Our programs are designed to be inclusive and accessible. Here is who is eligible to apply.</p>
+        </div>
+        <div class="eligibility__grid">
+          <ul class="eligibility__list reveal-left">
+            <li class="eligibility__item">
+              <div class="eligibility__item-icon" aria-hidden="true">👩</div>
+              <p>Women, men, and youth from the community — all are welcome to apply regardless of prior education level.</p>
+            </li>
+            <li class="eligibility__item">
+              <div class="eligibility__item-icon" aria-hidden="true">🎂</div>
+              <p>Age: [Minimum Age Placeholder] and above. Specific programs may have tailored age recommendations.</p>
+            </li>
+            <li class="eligibility__item">
+              <div class="eligibility__item-icon" aria-hidden="true">📖</div>
+              <p>No prior sewing or garment-making experience required for beginner programs. Intermediate programs may require basic skills.</p>
+            </li>
+            <li class="eligibility__item">
+              <div class="eligibility__item-icon" aria-hidden="true">📍</div>
+              <p>Preference may be given to participants from [Target Area/Community]. Local residency proof may be required.</p>
+            </li>
+            <li class="eligibility__item">
+              <div class="eligibility__item-icon" aria-hidden="true">💼</div>
+              <p>Participants must be available for the full duration of the selected batch and commit to regular attendance.</p>
+            </li>
+            <li class="eligibility__item">
+              <div class="eligibility__item-icon" aria-hidden="true">📋</div>
+              <p>[Additional eligibility criteria placeholder — e.g., income group, referral requirement, documentation needed.]</p>
+            </li>
+          </ul>
+          <div class="eligibility__note reveal-right">
+            <h3>Ready to Apply?</h3>
+            <p>If you meet the basic criteria or want to know more before applying, reach out to us directly via WhatsApp or visit our training centre. Our team will guide you through the enrolment process.</p>
+            <a href="#" class="btn btn--outline" data-whatsapp="training" style="display:inline-flex">💬 Ask Us on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" aria-labelledby="faq-heading">
+      <div class="container">
+        <div style="text-align:center" class="reveal">
+          <span class="section-label">FAQs</span>
+          <h2 class="section-heading" id="faq-heading">Frequently Asked Questions</h2>
+          <p class="section-subtext" style="margin:0 auto">Have questions about our programs? Here are answers to the most common enquiries.</p>
+        </div>
+        <div class="faq__list" role="list">
+
+          <div class="faq__item reveal" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              <h4>Are the training programs free of charge?</h4>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>[Fee/Free Placeholder — e.g., "Our training programs are offered free of charge / at a nominal subsidised cost of [X] to eligible participants. Fees, if any, are communicated during the registration process. We also offer fee waivers for participants from economically weaker backgrounds."]</p>
+            </div>
+          </div>
+
+          <div class="faq__item reveal reveal-delay-1" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              <h4>How long does each training program take to complete?</h4>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>[Duration Placeholder — e.g., "Programs range from [X] weeks to [X] months depending on the course. The Sewing & Tailoring beginner program is [X] weeks, while the Entrepreneurship program spans [X] weeks. Exact durations are provided at registration."]</p>
+            </div>
+          </div>
+
+          <div class="faq__item reveal reveal-delay-2" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              <h4>Will I receive a certificate after completing a program?</h4>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>[Certificate Placeholder — e.g., "Yes. All participants who successfully complete a program and meet attendance requirements receive a Certificate of Completion from [NGO Name]. This certificate is recognised by [partner organisations / employers / government bodies, if applicable]."]</p>
+            </div>
+          </div>
+
+          <div class="faq__item reveal reveal-delay-3" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              <h4>Can I enrol in more than one program at the same time?</h4>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>[Enrolment Policy Placeholder — e.g., "We generally recommend completing one program at a time to ensure full skill development. However, some participants with prior experience may be permitted to join a concurrent advanced program. Please speak to our coordinator for guidance based on your background."]</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="cta-programs-heading">
+      <div class="container">
+        <div class="cta-section__inner reveal">
+          <span class="badge badge--light">Start Today</span>
+          <h2 id="cta-programs-heading">Ready to Learn?</h2>
+          <p>Take the first step towards building a skilled, confident, and financially independent future. Reach out to us and we'll guide you through the right program for your goals.</p>
+          <div class="cta-section__btns">
+            <a href="#" class="btn btn--whatsapp" data-whatsapp="training">💬 WhatsApp Us About Training</a>
+            <a href="contact.html" class="btn btn--outline">📋 Contact for Enrolment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">
+            <div class="footer__logo-icon" aria-hidden="true">🌿</div>
+            <div>
+              <div class="footer__logo-name">[NGO Name]</div>
+              <span class="footer__logo-tagline">Empowering Communities</span>
+            </div>
+          </div>
+          <p class="footer__brand-desc">A dedicated non-profit organisation committed to transforming lives through vocational training, garment making, and women empowerment programs.</p>
+          <div class="footer__socials" aria-label="Social media links">
+            <a href="#" class="footer__social" aria-label="Facebook" rel="noopener noreferrer">📘</a>
+            <a href="#" class="footer__social" aria-label="Instagram" rel="noopener noreferrer">📸</a>
+            <a href="#" class="footer__social" aria-label="YouTube" rel="noopener noreferrer">▶️</a>
+            <a href="#" class="footer__social" aria-label="WhatsApp" rel="noopener noreferrer">💬</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__col-heading">Quick Links</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="programs.html" class="footer__link">Programs</a></li>
+            <li><a href="training.html" class="footer__link">Training</a></li>
+            <li><a href="production.html" class="footer__link">Production</a></li>
+            <li><a href="gallery.html" class="footer__link">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-heading">Our Programs</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="programs.html#sewing" class="footer__link">Sewing &amp; Tailoring</a></li>
+            <li><a href="programs.html#machine" class="footer__link">Machine Operation</a></li>
+            <li><a href="programs.html#garment" class="footer__link">Garment Making</a></li>
+            <li><a href="programs.html#pattern" class="footer__link">Pattern &amp; Cutting</a></li>
+            <li><a href="programs.html#embroidery" class="footer__link">Embroidery</a></li>
+            <li><a href="programs.html#entrepreneurship" class="footer__link">Entrepreneurship</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-heading">Contact Us</h3>
+          <div class="footer__contact-item">
+            <div class="footer__contact-icon" aria-hidden="true">📍</div>
+            <span>[Organisation Address,<br/>City, State — Pincode]</span>
+          </div>
+          <div class="footer__contact-item">
+            <div class="footer__contact-icon" aria-hidden="true">📞</div>
+            <span>[Phone Number]</span>
+          </div>
+          <div class="footer__contact-item">
+            <div class="footer__contact-icon" aria-hidden="true">✉️</div>
+            <span>[Email Address]</span>
+          </div>
+          <div class="footer__contact-item">
+            <div class="footer__contact-icon" aria-hidden="true">⏰</div>
+            <span>[Working Hours Placeholder]</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="year"></span> [NGO Name]. All rights reserved. Registered Non-Profit Organisation.</p>
+        <div class="footer__bottom-links">
+          <a href="privacy.html" class="footer__bottom-link">Privacy Policy</a>
+          <a href="terms.html" class="footer__bottom-link">Terms of Use</a>
+          <a href="sitemap.html" class="footer__bottom-link">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const navbar = document.getElementById('navbar');
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 40); }, { passive: true });
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('open');
+      navToggle.classList.toggle('open', isOpen);
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    // FAQ Accordion
+    document.querySelectorAll('.faq__question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq__item');
+        const isOpen = item.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+      });
+    });
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('revealed'); });
+    }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

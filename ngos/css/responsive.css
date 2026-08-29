@@ -1,0 +1,111 @@
+/* ============================================================
+   NGO WEBSITE — RESPONSIVE STYLESHEET
+   Breakpoints:
+   xl : max-width 1200px
+   lg : max-width 992px
+   md : max-width 768px
+   sm : max-width 576px
+   xs : max-width 400px
+   ============================================================ */
+
+/* ── XL ── */
+@media (max-width: 1200px) {
+  .nav-links a { font-size: .8rem; padding: 6px 8px; }
+  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 32px; }
+}
+
+/* ── LG ── */
+@media (max-width: 992px) {
+  :root { --nav-height: 68px; }
+
+  .nav-links, .nav-support-btn { display: none; }
+  .nav-toggle { display: flex; align-items: center; justify-content: center; }
+
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .footer-brand { grid-column: 1 / -1; }
+
+  .grid-4 { grid-template-columns: repeat(2,1fr); }
+  .grid-5 { grid-template-columns: repeat(3,1fr); }
+
+  .featured-story { grid-template-columns: 1fr; }
+  .featured-story-img { height: 340px; }
+  .featured-story-body { padding: 32px 28px; }
+
+  .gallery-grid { grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); }
+
+  .cta-banner { padding: 48px 32px; }
+}
+
+/* ── MD ── */
+@media (max-width: 768px) {
+  .section-padding { padding: 64px 0; }
+  .section-padding-sm { padding: 48px 0; }
+
+  .grid-2 { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: 1fr 1fr; }
+  .grid-5 { grid-template-columns: 1fr 1fr; }
+
+  .form-row { grid-template-columns: 1fr; }
+
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+
+  .page-hero { min-height: 340px; padding: calc(var(--nav-height) + 40px) 0 48px; }
+
+  .featured-story-body { padding: 24px 20px; }
+
+  .cta-banner { padding: 40px 24px; border-radius: var(--radius-lg); }
+  .cta-banner .btn-row { flex-direction: column; align-items: center; }
+
+  .bar-row { flex-wrap: wrap; }
+  .bar-year { width: 40px; }
+
+  .lightbox-prev { left: 8px; }
+  .lightbox-next { right: 8px; }
+
+  .contact-card .btn-row { flex-direction: column; }
+  .contact-card .btn-row .btn { width: 100%; justify-content: center; }
+
+  .hours-card { padding: 20px; }
+}
+
+/* ── SM ── */
+@media (max-width: 576px) {
+  .container { padding: 0 16px; }
+  .grid-4 { grid-template-columns: 1fr; }
+  .grid-5 { grid-template-columns: 1fr; }
+
+  .nav-wa-btn span { display: none; }
+
+  .gallery-grid { grid-template-columns: repeat(auto-fill,minmax(160px,1fr)); gap: 10px; }
+
+  .stat-card { padding: 24px 16px; }
+
+  .filter-bar { gap: 6px; }
+  .filter-btn { padding: 7px 14px; font-size: .8rem; }
+
+  .featured-story-img { height: 240px; }
+
+  .cta-banner h2 { font-size: 1.5rem; }
+
+  .lightbox-inner { max-width: 95vw; }
+  .lightbox-img { max-height: 70vh; }
+
+  .testi-slide { padding: 0; }
+
+  .amount-selector { grid-template-columns: repeat(2,1fr) !important; }
+}
+
+/* ── XS ── */
+@media (max-width: 400px) {
+  .amount-selector { grid-template-columns: 1fr !important; }
+  .btn-lg { padding: 13px 24px; font-size: .95rem; }
+}
+
+/* ── Print ── */
+@media print {
+  .navbar, .footer, .btn, .filter-bar, .lightbox, .mobile-menu { display: none !important; }
+  body { font-size: 13px; }
+  .page-hero { min-height: auto; padding: 32px 0; }
+}

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Read inspiring success stories from EmpowerHer's vocational training graduates — real women, real change, real impact." />
+  <meta name="keywords" content="success stories, women empowerment, vocational training, garment making, NGO stories" />
+  <meta property="og:title" content="Success Stories — Community Voices | EmpowerHer" />
+  <meta property="og:description" content="Stories of women who transformed their lives through vocational training and skill development." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Success Stories — Community Voices | EmpowerHer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <style>
+    .story-card { background:var(--white); border-radius:var(--radius-md); box-shadow:var(--shadow-sm); overflow:hidden; transition:all var(--transition); }
+    .story-card:hover { box-shadow:var(--shadow-md); transform:translateY(-4px); }
+    .story-card img { width:100%; height:220px; object-fit:cover; }
+    .story-card-body { padding:24px; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="EmpowerHer Home">
+        <div class="nav-logo-icon">🌿</div>
+        <div class="nav-logo-text">Empower<span>Her</span></div>
+      </a>
+      <div class="nav-links" role="menubar">
+        <a href="index.html" role="menuitem">Home</a>
+        <a href="about.html" role="menuitem">About</a>
+        <a href="programs.html" role="menuitem">Programs</a>
+        <a href="training.html" role="menuitem">Training</a>
+        <a href="production.html" role="menuitem">Production</a>
+        <a href="impact.html" role="menuitem">Impact</a>
+        <a href="stories.html" role="menuitem" class="active">Stories</a>
+        <a href="gallery.html" role="menuitem">Gallery</a>
+        <a href="get-involved.html" role="menuitem">Get Involved</a>
+        <a href="contact.html" role="menuitem">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="donate.html" class="nav-support-btn">Support Our Mission</a>
+        <a href="#" class="nav-wa-btn"
+           data-whatsapp="Hello EmpowerHer! I would like to know more about your programs."
+           aria-label="Chat on WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.527 5.847L.057 23.994l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.368l-.36-.214-3.737.979 1-3.636-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="training.html">Training</a>
+    <a href="production.html">Production</a>
+    <a href="impact.html">Impact</a>
+    <a href="stories.html">Stories</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="get-involved.html">Get Involved</a>
+    <a href="contact.html">Contact</a>
+    <div class="mobile-actions">
+      <a href="donate.html" class="btn btn-secondary">Support Our Mission</a>
+      <a href="#" class="btn btn-whatsapp" data-whatsapp="Hello EmpowerHer! I would like to know more about your programs.">💬 WhatsApp Us</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- 1. PAGE HERO -->
+    <section class="page-hero" aria-labelledby="stories-hero-heading">
+      <div class="container">
+        <div class="page-hero-content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span aria-hidden="true">›</span>
+            <span aria-current="page">Stories of Change</span>
+          </nav>
+          <div class="hero-badge">💬 Real Voices</div>
+          <h1 id="stories-hero-heading">Stories of Change</h1>
+          <p>Every programme graduate carries a story of courage, perseverance, and transformation. We are proud to share them.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. FEATURED STORY — Magazine-style -->
+    <section class="section-padding bg-light" aria-labelledby="featured-story-heading">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:40px;">
+          <div class="section-tag">Featured Story</div>
+          <h2 id="featured-story-heading" class="reveal">Our Story of the Month</h2>
+          <p style="color:var(--text-muted);font-size:.85rem;" class="reveal delay-1">
+            <span class="placeholder-label">Demo Content</span> Replace with an actual participant story.
+          </p>
+        </div>
+
+        <article class="featured-story reveal" aria-label="Featured story: From Learner to Skilled Tailor">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=800&q=80"
+               alt="[Sample] Participant working at sewing machine" class="featured-story-img" loading="lazy" />
+          <div class="featured-story-body">
+            <div class="story-meta">
+              <span class="story-meta-tag">🎓 Training Story</span>
+              <span class="story-meta-tag">📍 [Sample Location]</span>
+              <span class="story-meta-tag">✂️ Garment Making</span>
+            </div>
+            <h2 style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:16px;">
+              From Learner to Skilled Tailor
+            </h2>
+            <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:20px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;">
+              [Sample Name], e.g. Priya Sharma · [Sample Location] · Batch of [Year]
+            </p>
+            <p style="color:var(--text-muted);margin-bottom:16px;line-height:1.8;">
+              <span class="placeholder-label">Demo Content</span> "[Sample Name]" grew up in a small village with limited access to education and almost no employment opportunities for women. When she heard about EmpowerHer's free vocational training programme through a community meeting, she enrolled with hope but also with doubt — could she really learn to sew? Could this actually change her life?
+            </p>
+            <p style="color:var(--text-muted);margin-bottom:16px;line-height:1.8;">
+              Over the course of six months, she mastered basic stitching, advanced garment construction, machine operation, and fabric handling. Her trainers noted her exceptional dedication — she would often stay after sessions to practice. By the end of the programme, she had produced over 40 garments independently.
+            </p>
+            <p style="color:var(--text-muted);margin-bottom:16px;line-height:1.8;">
+              Today, [Sample Name] runs a small tailoring unit from her home with two industrial sewing machines — one of which was gifted by a donor through EmpowerHer. She earns a steady income, has enrolled her daughter in school, and has become a mentor to newer trainees in her community.
+            </p>
+
+            <div class="story-outcome" role="note">
+              <div class="outcome-label">🏆 Outcome</div>
+              <p>Now runs own tailoring unit · Earns ₹[X]/month · Mentors 3 new participants · Daughter enrolled in school. <span class="placeholder-label">Demo Content</span></p>
+            </div>
+
+            <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+              <a href="#share" class="btn btn-outline btn-sm">Share This Story</a>
+              <a href="impact.html" class="btn btn-primary btn-sm">View All Impact →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. MORE STORIES + 4. STORY FILTER -->
+    <section class="section-padding bg-white" id="more-stories" aria-labelledby="more-stories-heading">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag">All Stories</div>
+          <h2 id="more-stories-heading" class="section-heading reveal">More Stories of Transformation</h2>
+          <p class="section-sub reveal delay-1">Filter stories by category to find the ones most relevant to you.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="story-filter-bar filter-bar reveal delay-2" role="group" aria-label="Story category filter">
+          <button class="filter-btn active" data-filter="all">All Stories</button>
+          <button class="filter-btn" data-filter="training">Training Stories</button>
+          <button class="filter-btn" data-filter="production">Production Stories</button>
+          <button class="filter-btn" data-filter="community">Community Stories</button>
+        </div>
+
+        <!-- Story Cards Grid -->
+        <div class="grid-3">
+
+          <article class="story-card reveal delay-1" data-category="training" aria-label="Story: Building Confidence Stitch by Stitch">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80"
+                 alt="[Sample] Woman learning stitching" loading="lazy" />
+            <div class="story-card-body">
+              <div class="story-meta" style="margin-bottom:12px;">
+                <span class="story-meta-tag">Training Story</span>
+                <span class="placeholder-label">Demo Content</span>
+              </div>
+              <h3 style="margin-bottom:10px;font-size:1.1rem;">Building Confidence Stitch by Stitch</h3>
+              <p style="font-size:.88rem;color:var(--text-muted);margin-bottom:14px;">[Sample Name] had never used a sewing machine before joining our programme. After completing the 3-month basic course, she not only mastered stitching but also discovered a confidence she never knew she had. She now takes pride in every garment she creates.</p>
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--text-muted);">
+                <span>📍 [Sample Location]</span>
+                <span>✂️ Basic Stitching</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="story-card reveal delay-2" data-category="production" aria-label="Story: Empowered Through Skills">
+            <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&q=80"
+                 alt="[Sample] Woman with finished garment" loading="lazy" />
+            <div class="story-card-body">
+              <div class="story-meta" style="margin-bottom:12px;">
+                <span class="story-meta-tag">Production Story</span>
+                <span class="placeholder-label">Demo Content</span>
+              </div>
+              <h3 style="margin-bottom:10px;font-size:1.1rem;">Empowered Through Skills</h3>
+              <p style="font-size:.88rem;color:var(--text-muted);margin-bottom:14px;">After completing the advanced garment production module, [Sample Name] was placed with a local production unit where she now works as a quality checker. Her income has tripled and she is sending her children to school for the first time.</p>
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--text-muted);">
+                <span>📍 [Sample Location]</span>
+                <span>👗 Advanced Production</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="story-card reveal delay-3" data-category="community" aria-label="Story: From Uncertainty to Independence">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80"
+                 alt="[Sample] Community women group" loading="lazy" />
+            <div class="story-card-body">
+              <div class="story-meta" style="margin-bottom:12px;">
+                <span class="story-meta-tag">Community Story</span>
+                <span class="placeholder-label">Demo Content</span>
+              </div>
+              <h3 style="margin-bottom:10px;font-size:1.1rem;">From Uncertainty to Independence</h3>
+              <p style="font-size:.88rem;color:var(--text-muted);margin-bottom:14px;">A single mother of two who had lost her primary source of income, [Sample Name] enrolled in our programme during a difficult period. Six months later she was earning independently and had also inspired three other women from her neighbourhood to enrol.</p>
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--text-muted);">
+                <span>📍 [Sample Location]</span>
+                <span>🏘️ Community Leader</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SHARE YOUR STORY — CTA -->
+    <section class="section-padding bg-light" id="share" aria-labelledby="share-heading">
+      <div class="container">
+        <div class="cta-banner" style="background:linear-gradient(135deg,var(--primary-dark),var(--primary));">
+          <div class="hero-badge" style="background:rgba(232,155,60,.25);color:var(--secondary-light);border-color:rgba(232,155,60,.4);">
+            📖 Your Story Matters
+          </div>
+          <h2 id="share-heading" class="text-white">Are You a Programme Participant?</h2>
+          <p class="text-white" style="opacity:.85;">Your story could inspire another woman to take that first step. Share it with us and we will amplify your voice.</p>
+          <div class="btn-row" style="justify-content:center;">
+            <a href="#submit-story" class="btn btn-secondary btn-lg">✍️ Submit Your Story</a>
+            <a href="#" class="btn btn-whatsapp btn-lg"
+               data-whatsapp="Hello EmpowerHer! I am a programme participant and I would like to share my story with you. Please guide me.">
+              💬 Share via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. VIDEO STORIES PLACEHOLDER -->
+    <section class="section-padding bg-white" aria-labelledby="videos-heading">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag">Video Stories</div>
+          <h2 id="videos-heading" class="section-heading reveal">See Change in Action</h2>
+          <p class="section-sub reveal delay-1">
+            Watch our participants talk about their journey in their own words.
+            <span class="placeholder-label">Placeholder</span> Replace with actual video URLs.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="video-card reveal delay-1" role="img" aria-label="Video story placeholder — coming soon">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+                 alt="Video thumbnail placeholder" class="video-thumb" loading="lazy" />
+            <div class="video-play">
+              <div class="play-btn" aria-hidden="true">▶</div>
+              <p class="video-caption">"My Journey Through Training" — [Sample Name] <span class="placeholder-label">Coming Soon</span></p>
+            </div>
+          </div>
+
+          <div class="video-card reveal delay-2" role="img" aria-label="Video story placeholder — coming soon">
+            <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&q=80"
+                 alt="Video thumbnail placeholder" class="video-thumb" loading="lazy" />
+            <div class="video-play">
+              <div class="play-btn" aria-hidden="true">▶</div>
+              <p class="video-caption">"How EmpowerHer Changed My Community" — [Sample Name] <span class="placeholder-label">Coming Soon</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. TESTIMONIALS CAROUSEL -->
+    <section class="section-padding bg-light" aria-labelledby="testi-heading">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:40px;">
+          <div class="section-tag">Testimonials</div>
+          <h2 id="testi-heading" class="reveal">What Our Participants Say</h2>
+          <p style="color:var(--text-muted);font-size:.85rem;margin-top:8px;" class="reveal delay-1">
+            <span class="placeholder-label">Sample Content</span> Replace with verified participant quotes.
+          </p>
+        </div>
+
+        <div class="testi-carousel reveal delay-2">
+          <div class="testi-track">
+
+            <div class="testi-slide">
+              <blockquote class="quote-block" style="max-width:700px;margin:0 auto;">
+                <p class="quote-text">"I had never imagined I would ever run my own business. EmpowerHer gave me the skills, the confidence, and the community I needed to believe it was possible. My tailoring unit now serves 50 customers a month." <span class="placeholder-label">Sample Content</span></p>
+                <footer class="quote-author">
+                  <div class="quote-avatar">A</div>
+                  <div>
+                    <div class="quote-name">[Sample Name] — e.g. Anita Sharma</div>
+                    <div class="quote-role">Garment Making Graduate · Batch [Year] · [Location]</div>
+                  </div>
+                </footer>
+              </blockquote>
+            </div>
+
+            <div class="testi-slide">
+              <blockquote class="quote-block" style="max-width:700px;margin:0 auto;">
+                <p class="quote-text">"The trainers were patient and encouraging. The programme did not just teach us stitching — it taught us discipline, time management, and self-respect. I am now employed at a garment export unit." <span class="placeholder-label">Sample Content</span></p>
+                <footer class="quote-author">
+                  <div class="quote-avatar">S</div>
+                  <div>
+                    <div class="quote-name">[Sample Name] — e.g. Sunita Devi</div>
+                    <div class="quote-role">Advanced Production Graduate · [Location]</div>
+                  </div>
+                </footer>
+              </blockquote>
+            </div>
+
+            <div class="testi-slide">
+              <blockquote class="quote-block" style="max-width:700px;margin:0 auto;">
+                <p class="quote-text">"My daughter now wants to follow in my footsteps and learn tailoring too. I tell her — education and skill together are unstoppable. This organisation showed me that path and I am forever grateful." <span class="placeholder-label">Sample Content</span></p>
+                <footer class="quote-author">
+                  <div class="quote-avatar">F</div>
+                  <div>
+                    <div class="quote-name">[Sample Name] — e.g. Fatima Begum</div>
+                    <div class="quote-role">Community Training Graduate · [Location]</div>
+                  </div>
+                </footer>
+              </blockquote>
+            </div>
+
+            <div class="testi-slide">
+              <blockquote class="quote-block" style="max-width:700px;margin:0 auto;">
+                <p class="quote-text">"I joined because I had nothing to lose. I stayed because I discovered everything to gain. The programme gave me skills, friends, and a future I can be proud of." <span class="placeholder-label">Sample Content</span></p>
+                <footer class="quote-author">
+                  <div class="quote-avatar">L</div>
+                  <div>
+                    <div class="quote-name">[Sample Name] — e.g. Lalita Kumari</div>
+                    <div class="quote-role">Basic Stitching Graduate · [Location]</div>
+                  </div>
+                </footer>
+              </blockquote>
+            </div>
+
+          </div>
+          <div class="testi-dots" role="tablist" aria-label="Testimonial navigation"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. SUBMIT YOUR STORY FORM -->
+    <section class="section-padding bg-white" id="submit-story" aria-labelledby="form-heading">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;">
+
+          <div>
+            <div class="section-tag">Share With Us</div>
+            <h2 id="form-heading" class="section-heading reveal">Submit Your Story</h2>
+            <p class="reveal delay-1" style="color:var(--text-muted);margin-bottom:24px;">If you have completed any of our training programmes, we would love to hear about your journey. Your story can inspire hundreds of others.</p>
+
+            <div style="background:var(--light);border-radius:var(--radius-md);padding:24px;" class="reveal delay-2">
+              <h4 style="margin-bottom:14px;font-size:1rem;">Why Share Your Story?</h4>
+              <ul style="list-style:none;padding:0;">
+                <li style="display:flex;gap:10px;margin-bottom:10px;font-size:.9rem;color:var(--text-muted);">
+                  <span>✅</span> Inspire other women to take that first step
+                </li>
+                <li style="display:flex;gap:10px;margin-bottom:10px;font-size:.9rem;color:var(--text-muted);">
+                  <span>✅</span> Help us demonstrate our programme impact to donors and partners
+                </li>
+                <li style="display:flex;gap:10px;margin-bottom:10px;font-size:.9rem;color:var(--text-muted);">
+                  <span>✅</span> Become a voice for women's empowerment in your community
+                </li>
+                <li style="display:flex;gap:10px;font-size:.9rem;color:var(--text-muted);">
+                  <span>✅</span> Your story will only be shared with your explicit consent
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <form id="story-form" novalidate class="reveal delay-3" aria-label="Story submission form">
+              <div class="form-group">
+                <label class="form-label" for="sf-name">Full Name <span style="color:#e74c3c;">*</span></label>
+                <input type="text" id="sf-name" name="name" class="form-control" placeholder="Your name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="sf-phone">Phone / WhatsApp <span style="color:#e74c3c;">*</span></label>
+                <input type="tel" id="sf-phone" name="phone" class="form-control" placeholder="10-digit mobile number" required autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="sf-training">Training Completed</label>
+                <input type="text" id="sf-training" name="training" class="form-control" placeholder="e.g. Basic Stitching, Advanced Garment Making" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="sf-story">Your Story <span style="color:#e74c3c;">*</span></label>
+                <textarea id="sf-story" name="story" class="form-control" rows="6"
+                  placeholder="Tell us about your journey — where you started, what you learned, and how things have changed for you..." required></textarea>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input type="checkbox" id="sf-consent" name="consent" required />
+                  <label for="sf-consent">I give my consent for EmpowerHer to share my story on their website and social media channels. I understand my personal contact details will not be shared publicly.</label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+                💬 Submit Story via WhatsApp
+              </button>
+              <p style="font-size:.78rem;color:var(--text-muted);margin-top:10px;text-align:center;">Your story will be sent to us via WhatsApp for review before publishing.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">
+            <div class="icon">🌿</div>
+            <div class="footer-brand-name">Empower<span>Her</span></div>
+          </div>
+          <p class="footer-desc">Stitching futures and empowering women through vocational training, garment production, and community-based skill development programs.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook" rel="noopener">f</a>
+            <a href="#" aria-label="Instagram" rel="noopener">ig</a>
+            <a href="#" aria-label="YouTube" rel="noopener">yt</a>
+            <a href="#" aria-label="LinkedIn" rel="noopener">in</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="production.html">Production</a></li>
+            <li><a href="impact.html">Our Impact</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <ul class="footer-links">
+            <li><a href="get-involved.html">Volunteer</a></li>
+            <li><a href="get-involved.html#partner">Partner With Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="get-involved.html#csr">CSR / Corporate</a></li>
+            <li><a href="stories.html#submit">Share Your Story</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <span class="ic">📍</span>
+            <span>[NGO Address, City, State] <span class="placeholder-label">Placeholder</span></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="ic">📞</span>
+            <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="ic">✉️</span>
+            <a href="mailto:info@empowerher.org">info@empowerher.org</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="ic">🕐</span>
+            <span>Mon–Sat: 10 AM – 6 PM</span>
+          </div>
+          <a href="#" class="btn btn-whatsapp btn-sm" style="margin-top:12px;"
+             data-whatsapp="Hello EmpowerHer! I would like to know more about your work.">
+            💬 WhatsApp Us
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 EmpowerHer. All rights reserved.</span>
+        <span>Reg. No: [NGO Registration Number] <span class="placeholder-label">Placeholder</span></span>
+        <div><a href="#">Privacy Policy</a> · <a href="#">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

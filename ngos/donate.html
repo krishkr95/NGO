@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate &amp; Sponsor a Skill | [NGO Name]</title>
+  <meta name="description" content="Support vocational training, machine sewing education, and sustainable livelihoods for women and underserved communities. Transparent giving with direct impact." />
+  <meta name="keywords" content="donate to NGO, sponsor vocational training, sewing machine donation, women empowerment charity, donate skill development" />
+  <meta name="author" content="[NGO Name]" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Donate &amp; Sponsor a Skill | [NGO Name]" />
+  <meta property="og:description" content="Your support provides sewing machines, fabric kits, and practical vocational training for women to earn independent livelihoods." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" />
+  <meta property="og:url" content="donate.html" />
+
+  <link rel="canonical" href="donate.html" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Inter:wght@300;400;500;600;700&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="[NGO Name] Homepage">
+        <div class="navbar__logo-icon" aria-hidden="true">🧵</div>
+        <div class="navbar__logo-text">
+          <span class="navbar__logo-name">[NGO Name]</span>
+          <span class="navbar__logo-tagline">Training &amp; Livelihoods</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="training.html" class="nav-link">Training</a>
+        <a href="production.html" class="nav-link">Production</a>
+        <a href="impact.html" class="nav-link">Impact</a>
+        <a href="stories.html" class="nav-link">Stories</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="get-involved.html" class="nav-link">Get Involved</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="donate.html" class="btn btn-secondary btn-sm">Donate Now</a>
+        <button class="btn btn-whatsapp btn-sm" data-whatsapp="Hi, I would like to support your NGO. Please share the donation details.">
+          <span>WhatsApp</span>
+        </button>
+      </div>
+
+      <button class="navbar__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <nav class="mobile-menu__nav">
+        <a href="index.html" class="mobile-menu__link">Home</a>
+        <a href="about.html" class="mobile-menu__link">About Us</a>
+        <a href="programs.html" class="mobile-menu__link">Training Programs</a>
+        <a href="training.html" class="mobile-menu__link">Vocational Training</a>
+        <a href="production.html" class="mobile-menu__link">Garment Production</a>
+        <a href="impact.html" class="mobile-menu__link">Our Impact</a>
+        <a href="stories.html" class="mobile-menu__link">Success Stories</a>
+        <a href="gallery.html" class="mobile-menu__link">Photo Gallery</a>
+        <a href="get-involved.html" class="mobile-menu__link">Get Involved</a>
+        <a href="contact.html" class="mobile-menu__link">Contact Us</a>
+        <a href="donate.html" class="mobile-menu__link active" style="color:var(--secondary); font-weight:700;">Donate Now &rarr;</a>
+      </nav>
+      <div class="mobile-menu__footer">
+        <a href="donate.html" class="btn btn-primary" style="width:100%; margin-bottom:12px;">Support Our Mission</a>
+        <button class="btn btn-whatsapp" style="width:100%;" data-whatsapp="Hi, I would like to support your NGO.">
+          Chat on WhatsApp
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <div class="page-hero__eyebrow">
+        <span></span> Direct Impact Giving <span></span>
+      </div>
+      <h1 class="page-hero__title">Your Support Can <em>Create Opportunities</em></h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb__sep">/</span>
+        <span class="breadcrumb__current">Donate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW YOUR CONTRIBUTION TRANSFORMS LIVES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Empowerment Tiers</span>
+        <h2 class="section-title">Select Your <span>Sponsorship Amount</span></h2>
+        <p class="section-subtitle">
+          Your contribution provides training materials, machine operation education, and livelihood kits directly to aspiring women artisans.
+        </p>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- Interactive Donation Selector -->
+      <div class="donation__wrapper reveal">
+        <h3 class="donation__title">Choose an Amount to Support</h3>
+
+        <div class="donation__amounts">
+          <!-- ₹500 -->
+          <div class="donation__amount-card amount-card" data-amount="500">
+            <span class="donation__amount-value">₹500</span>
+            <span class="donation__amount-impact">Training kit &amp; practice fabric for 1 student</span>
+          </div>
+
+          <!-- ₹1,000 (Default) -->
+          <div class="donation__amount-card amount-card active" data-amount="1000">
+            <span class="donation__amount-value">₹1,000</span>
+            <span class="donation__amount-impact">Tailoring shears, ruler set &amp; sewing supplies</span>
+          </div>
+
+          <!-- ₹2,500 -->
+          <div class="donation__amount-card amount-card" data-amount="2500">
+            <span class="donation__amount-value">₹2,500</span>
+            <span class="donation__amount-impact">1 month comprehensive training sponsorship</span>
+          </div>
+
+          <!-- ₹5,000 -->
+          <div class="donation__amount-card amount-card" data-amount="5000">
+            <span class="donation__amount-value">₹5,000</span>
+            <span class="donation__amount-impact">Sewing machine grant contribution</span>
+          </div>
+
+          <!-- ₹15,000 -->
+          <div class="donation__amount-card amount-card" data-amount="15000">
+            <span class="donation__amount-value">₹15,000</span>
+            <span class="donation__amount-impact">Full industrial motorized machine sponsorship</span>
+          </div>
+
+          <!-- Custom -->
+          <div class="donation__amount-card amount-card" data-amount="custom">
+            <span class="donation__amount-value">Custom</span>
+            <span class="donation__amount-impact">Enter any contribution amount</span>
+          </div>
+        </div>
+
+        <!-- Custom Input -->
+        <div class="donation__custom" id="custom-amount-input" style="display:none;">
+          <label for="custom-amt" style="display:block; font-weight:600; margin-bottom:6px;">Enter Amount in Rupees (₹):</label>
+          <input type="number" id="custom-amt" placeholder="e.g. 7500" min="100" />
+        </div>
+
+        <!-- Action Button -->
+        <div style="margin-top:28px;">
+          <button class="btn btn-whatsapp btn-lg" id="donate-wa-btn" style="width:100%; padding:16px;">
+            <span>Donate via WhatsApp &rarr;</span>
+          </button>
+          <p class="text-center text-muted" style="margin-top:12px; font-size:0.85rem;">
+            * Generates a pre-filled WhatsApp message directly to our finance team for bank transfer or UPI QR payment details.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSPARENCY & PAYMENT OPTIONS (Placeholders clearly marked) -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Accountability</span>
+        <h2 class="section-title">Direct Bank &amp; <span>UPI Payment Details</span></h2>
+        <p class="section-subtitle">
+          We maintain full transparency with donors. Official receipts and 80G tax exemption details are shared promptly upon contribution.
+        </p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="grid grid-3" style="gap:28px;">
+        <!-- UPI Placeholder -->
+        <div class="icon-card reveal">
+          <div class="icon-card__icon">📱</div>
+          <h3 class="icon-card__title">UPI / QR Code Transfer</h3>
+          <p class="icon-card__text" style="margin-bottom:16px;">
+            Instant transfer via Google Pay, PhonePe, Paytm, or BHIM.
+          </p>
+          <div style="background:var(--light); padding:16px; border-radius:var(--radius-sm); border:1px dashed var(--border); text-align:center;">
+            <strong>UPI ID:</strong>
+            <div style="font-family:monospace; font-size:1.1rem; color:var(--primary); margin-top:4px;">[ngo@upi]</div>
+            <div style="margin-top:12px; padding:20px; background:#e8e4da; border-radius:8px; font-size:0.8rem; color:var(--text-muted);">
+              [QR Code Placeholder &mdash; Scannable UPI QR will be displayed here]
+            </div>
+          </div>
+        </div>
+
+        <!-- Bank Details Placeholder -->
+        <div class="icon-card reveal">
+          <div class="icon-card__icon">🏛️</div>
+          <h3 class="icon-card__title">Direct Bank NEFT / RTGS</h3>
+          <p class="icon-card__text" style="margin-bottom:16px;">
+            Direct electronic fund transfer into our official NGO trust account.
+          </p>
+          <div style="background:var(--light); padding:16px; border-radius:var(--radius-sm); font-size:0.85rem; line-height:1.8;">
+            <p><strong>Account Name:</strong> [NGO Trust Name]</p>
+            <p><strong>Account No:</strong> [XXXXXXXXXXXX]</p>
+            <p><strong>Bank Name:</strong> [Bank Name Placeholder]</p>
+            <p><strong>IFSC Code:</strong> [IFSC000XXXX]</p>
+            <p><strong>Branch:</strong> [Branch Name]</p>
+          </div>
+        </div>
+
+        <!-- 80G Tax Exemption & Receipts -->
+        <div class="icon-card reveal">
+          <div class="icon-card__icon">📜</div>
+          <h3 class="icon-card__title">Tax Exemption &amp; Receipts</h3>
+          <p class="icon-card__text">
+            Donations are eligible for tax benefits under Section 80G of the Income Tax Act (where registered).
+          </p>
+          <div style="background:rgba(31,111,84,0.08); padding:16px; border-radius:var(--radius-sm); font-size:0.85rem; margin-top:16px;">
+            <p><strong>Receipt Timeline:</strong> Sent within 24 hours of payment verification via Email/WhatsApp.</p>
+            <p style="margin-top:6px;"><strong>80G Reg Number:</strong> [80G Registration Placeholder]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATION TRANSPARENCY BAR BREAKDOWN -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="about__grid">
+        <div class="reveal-left">
+          <span class="section-badge">Financial Integrity</span>
+          <h2 class="section-title">Where Does Your <span>Donation Go?</span></h2>
+          <p class="lead">
+            We are committed to maximizing the percentage of every rupee that directly touches trainees' lives.
+          </p>
+
+          <!-- Transparency Bars -->
+          <div style="margin-top:28px; display:flex; flex-direction:column; gap:20px;">
+            <div>
+              <div class="flex-between" style="font-weight:600; font-size:0.95rem; margin-bottom:6px;">
+                <span>Training, Practice Fabrics &amp; Faculty</span>
+                <span>75%</span>
+              </div>
+              <div class="impact-stat__bar" style="height:8px;">
+                <div class="donut-bar-fill" data-width="75%" style="height:100%; background:var(--primary); border-radius:4px; width:75%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex-between" style="font-weight:600; font-size:0.95rem; margin-bottom:6px;">
+                <span>Sewing Machine Equipment &amp; Tool Kits</span>
+                <span>15%</span>
+              </div>
+              <div class="impact-stat__bar" style="height:8px;">
+                <div class="donut-bar-fill" data-width="15%" style="height:100%; background:var(--secondary); border-radius:4px; width:15%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex-between" style="font-weight:600; font-size:0.95rem; margin-bottom:6px;">
+                <span>Community Outreach &amp; Administration</span>
+                <span>10%</span>
+              </div>
+              <div class="impact-stat__bar" style="height:8px;">
+                <div class="donut-bar-fill" data-width="10%" style="height:100%; background:var(--dark); border-radius:4px; width:10%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <div class="mv-card" style="padding:40px; background:var(--white);">
+            <span style="font-size:2.5rem; display:block; margin-bottom:16px;">🧵</span>
+            <h3 style="font-size:1.3rem; margin-bottom:12px;">Sponsor a Complete Machine</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.7; margin-bottom:24px;">
+              A commercial motorized sewing machine costs approximately ₹15,000 and can be used to train over 20+ women each year for a decade. A brass plaque with the donor's name can be affixed upon request.
+            </p>
+            <button class="btn btn-secondary" style="width:100%;" data-whatsapp="Hi, I am interested in sponsoring a complete sewing machine with a donor plaque.">
+              Sponsor a Machine via WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATION FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Frequently Asked Questions</span>
+        <h2 class="section-title">Questions About <span>Donations</span></h2>
+        <p class="section-subtitle">Common queries regarding our donation process and receipt generation.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="faq__list accordion-group">
+        <!-- FAQ 1 -->
+        <div class="faq__item">
+          <button class="faq__question accordion-trigger">
+            <span class="faq__question-text">How will I receive my donation receipt?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              Once your UPI transfer or NEFT is verified, our team issues an official digital receipt containing your name, PAN, and transaction reference directly to your WhatsApp and Email address within 24 hours.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq__item">
+          <button class="faq__question accordion-trigger">
+            <span class="faq__question-text">Can I donate physical sewing machines or cloth material?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              Yes! We gratefully accept working sewing machines, fabric rolls, threads, scissors, and cutting equipment. Please contact our center coordinator via WhatsApp to schedule a drop-off or collection.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq__item">
+          <button class="faq__question accordion-trigger">
+            <span class="faq__question-text">Can I visit the training center to see my donation in action?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              Absolutely. We welcome donors and supporters to visit our center between 10:00 AM and 5:00 PM (Monday through Saturday) to meet the trainees and see the classes firsthand.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container footer__grid">
+        <div>
+          <a href="index.html" class="footer__logo">
+            <div class="navbar__logo-icon" style="background:var(--primary-light);">🧵</div>
+            <span class="footer__logo-name">[NGO Name]</span>
+          </a>
+          <p class="footer__tagline">
+            Empowering communities through vocational training, machine sewing skills, garment making, and sustainable livelihood opportunities.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">ig</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">yt</a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="programs.html" class="footer__link">Training Programs</a></li>
+            <li><a href="training.html" class="footer__link">Vocational Training</a></li>
+            <li><a href="production.html" class="footer__link">Garment Production</a></li>
+            <li><a href="impact.html" class="footer__link">Our Impact</a></li>
+            <li><a href="stories.html" class="footer__link">Success Stories</a></li>
+            <li><a href="gallery.html" class="footer__link">Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Get Involved</h4>
+          <ul class="footer__links">
+            <li><a href="donate.html" class="footer__link">Donate &amp; Sponsor</a></li>
+            <li><a href="get-involved.html#volunteer" class="footer__link">Become a Volunteer</a></li>
+            <li><a href="get-involved.html#csr" class="footer__link">CSR Partnerships</a></li>
+            <li><a href="production.html#orders" class="footer__link">Place Garment Orders</a></li>
+            <li><a href="contact.html" class="footer__link">Visit Our Center</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Contact &amp; Hours</h4>
+          <div style="font-size:0.9rem; line-height:1.8; color:rgba(255,255,255,0.7);">
+            <p>📍 <strong>Address:</strong> [NGO Address, City, State &ndash; PIN]</p>
+            <p>📞 <strong>Phone:</strong> +91 XXXXX XXXXX</p>
+            <p>✉️ <strong>Email:</strong> info@example.org</p>
+            <p>⏰ <strong>Hours:</strong> Mon &ndash; Sat: 10:00 AM &ndash; 6:00 PM</p>
+          </div>
+          <div style="margin-top:16px;">
+            <button class="btn btn-whatsapp btn-sm" data-whatsapp="Hi, I would like to reach out to your NGO team.">
+              Chat on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-block:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-size:0.85rem; color:rgba(255,255,255,0.5);">
+      <p>&copy; 2026 [NGO Name]. All Rights Reserved. Reg. Non-Profit Organisation.</p>
+      <div style="display:flex; gap:16px;">
+        <a href="#" style="color:inherit;">Privacy Policy</a>
+        <a href="#" style="color:inherit;">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
