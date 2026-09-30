@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 72" width="250" height="72" fill="none">
+  <defs>
+    <linearGradient id="bcf-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#40916c" />
+      <stop offset="100%" stop-color="#1b3826" />
+    </linearGradient>
+  </defs>
+  <!-- Icon Emblem -->
+  <g transform="translate(6, 6)">
+    <!-- Base Rounded Shield -->
+    <rect x="0" y="0" width="60" height="60" rx="16" fill="url(#bcf-grad)" />
+    <!-- Lake Water Ripple -->
+    <path d="M12 41 C19 36, 26 45, 33 40 C40 35, 45 38, 48 37" stroke="#d8f3dc" stroke-width="2.75" stroke-linecap="round" fill="none" opacity="0.9" />
+    <path d="M14 47 C21 42, 27 50, 34 45 C40 40, 44 44, 46 42" stroke="#e9c46a" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.95" />
+    <!-- Sprout Leaves / Protective Hands -->
+    <path d="M30 15 C30 15, 20 23, 20 31 C20 36, 24 39, 30 39 C36 39, 40 36, 40 31 C40 23, 30 15, 30 15 Z" fill="#ffffff" />
+    <path d="M30 19 C30 19, 35 25, 35 30.5 C35 34, 32.5 35.5, 30 35.5 C27.5 35.5, 25 34, 25 30.5 C25 25, 30 19, 30 19 Z" fill="#40916c" />
+    <circle cx="30" cy="17" r="2.2" fill="#e9c46a" />
+  </g>
+  <!-- Typography -->
+  <g transform="translate(76, 21)">
+    <text x="0" y="16" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" letter-spacing="-0.025em" fill="#0d1b12">BHOPAL <tspan fill="#2d6a4f">CARES</tspan></text>
+    <text x="0" y="33" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.14em" fill="#526156">FORUM • EST. 2019</text>
+  </g>
+</svg>
