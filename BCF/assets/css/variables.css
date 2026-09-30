@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Bhopal Cares Forum (BCF) - Design Tokens & Variables
+   Modern anti-AI aesthetic: organic dark greens, tactile paper tones, editorial typography
+   ========================================================================== */
+
+:root {
+  /* Core Brand Colors */
+  --bg-canvas: #f8faf8;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #f0f4f1;
+  --bg-surface-translucent: rgba(255, 255, 255, 0.85);
+
+  --forest-900: #0d1b12;
+  --forest-800: #1b3826;
+  --forest-700: #214a33;
+  --forest-600: #2d6a4f;
+  --emerald-500: #40916c;
+  --emerald-400: #52b788;
+  --mint-200: #b7e4c7;
+  --mint-100: #d8f3dc;
+  --mint-50: #f1faee;
+  
+  --ochre-accent: #e9c46a;
+  --ochre-light: #fef9e7;
+  --ochre-dark: #b8860b;
+
+  --text-primary: #111a14;
+  --text-secondary: #304035;
+  --text-muted: #526156;
+  --text-light: #7b8e80;
+  --text-inverse: #ffffff;
+
+  --border-light: rgba(13, 27, 18, 0.08);
+  --border-subtle: rgba(13, 27, 18, 0.04);
+  --border-focus: #40916c;
+
+  /* Pillar Thematic Accents (FR-4.1) */
+  /* 1. Clean - Lake Aqua / Teal */
+  --pillar-clean: #0284c7;
+  --pillar-clean-dark: #0369a1;
+  --pillar-clean-bg: #e0f2fe;
+  --pillar-clean-border: #bae6fd;
+
+  /* 2. Plant - Deep Foliage Green */
+  --pillar-plant: #2d6a4f;
+  --pillar-plant-dark: #1b3826;
+  --pillar-plant-bg: #d8f3dc;
+  --pillar-plant-border: #b7e4c7;
+
+  /* 3. Care - Seed Amber / Warm Earth */
+  --pillar-care: #d97706;
+  --pillar-care-dark: #b45309;
+  --pillar-care-bg: #fef3c7;
+  --pillar-care-border: #fde68a;
+
+  /* 4. Upharam - Terracotta / Warm Coral */
+  --pillar-upharam: #e76f51;
+  --pillar-upharam-dark: #c25438;
+  --pillar-upharam-bg: #fde8e4;
+  --pillar-upharam-border: #fbc4ab;
+
+  /* Status Colors */
+  --status-success: #10b981;
+  --status-warning: #f59e0b;
+  --status-error: #ef4444;
+  --status-info: #3b82f6;
+
+  /* Typography */
+  --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Spacing Scale */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  /* Geometry & Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 9999px;
+
+  /* Elevation & Shadows */
+  --shadow-subtle: 0 4px 20px -2px rgba(13, 27, 18, 0.05);
+  --shadow-card: 0 10px 25px -5px rgba(13, 27, 18, 0.07), 0 8px 10px -6px rgba(13, 27, 18, 0.03);
+  --shadow-hover: 0 16px 36px -4px rgba(13, 27, 18, 0.13), 0 6px 12px -3px rgba(13, 27, 18, 0.08);
+  --shadow-modal: 0 25px 60px -12px rgba(13, 27, 18, 0.35);
+
+  /* Transitions & Animation Timings */
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s var(--ease-smooth);
+  --transition-slow: 0.4s var(--ease-smooth);
+
+  /* Layout Containers */
+  --container-max-w: 1240px;
+  --container-narrow: 860px;
+  --header-height: 76px;
+}
